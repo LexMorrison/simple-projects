@@ -40,7 +40,9 @@ function ImageGalleryPage() {
   return (
     <section className="gallerySection">
       {isLoading ? (
-        <p>Loading...</p>
+        <p style={{ position: "absolute", top: "50%", left: "50%" }}>
+          Loading...
+        </p>
       ) : (
         <>
           <ImageGallery images={images} handleSearch={handleSearch} />
